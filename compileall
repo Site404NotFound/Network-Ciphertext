@@ -1,0 +1,33 @@
+#!/bin/bash
+
+################################################################################
+## Author: James Hippler (HipplerJ)
+## Oregon State University
+## CS 344-400 (Spring 2018)
+## Operating Systems I
+##
+## Description: Program 4 - OTP (Block 4)
+## Due: Sunday, June 10, 2018
+##
+## Filename: compileall
+##
+## OBJECTIVES:
+## Compilation Script: You must also write a short bash shell script called
+## “compileall” that merely compiles your five programs. For example, the first
+## two lines might be:
+##
+##  #!/bin/bash
+##  gcc -o otp_enc_d otp_enc_d.c
+##  ...
+##
+## This script will be used to compile your software, and must successfully run
+## on our class server. The compilation must create all five programs, in the
+## same directory as “compileall”, for immediate use by the grading script,
+## which is named “p4gradingscript”.
+################################################################################
+
+gcc -o keygen keygen.c                                                          # Compiles keygen.c file (keygen)
+gcc -o otp_enc otp_enc.c                                                        # Compiles otp_enc.c file (otp_enc)
+gcc -o otp_enc_d otp_enc_d.c                                                    # Compiles otp_enc_d.c file (otp_enc_d)
+gcc -o otp_dec otp_dec.c                                                        # Compiles opt_dec.c file (opt_dec)
+gcc -o otp_dec_d otp_dec_d.c                                                    # Compiles opt_dec_d.c file (opt_dec_d)
